@@ -55,6 +55,33 @@
     padding:75px;
     margin:50px;
 }
+.workGrid {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "cookingMat projInfo1 projInfo1"
+    "trekIt projInfo2 projInfo2"
+    "getMo projInfo3 projInfo3";
+}
+.cookingMat {
+    grid-area: cookingMat;
+}
+.trekIt {
+    grid-area: trekIt;
+}
+.getMo {
+    grid-area: getMo;
+}
+.projInfo1 {
+    grid-area: projInfo1;
+}
+.projInfo2 {
+    grid-area: projInfo2;
+}
+.projInfo3 {
+    grid-area: projInfo3;
+}
 .footer {
     background-color: #373738;
 }
