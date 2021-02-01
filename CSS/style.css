@@ -57,8 +57,8 @@
 }
 .workGrid {
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 75%;
     grid-template-areas:
     "cookingMat projInfo1 projInfo1"
     "trekIt projInfo2 projInfo2"
@@ -88,4 +88,30 @@
 .footer ul {
     display: inline-block;
     vertical-align: top;
+}
+@media only screen and (max-width:600) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .wireFraming {
+        width:100%;
+    }
+    .userEmpathy {
+        width:100%;
+    }
+    .commnColab {
+        width:100%;
+    }
+    #workGrid {
+        grid-template-rows: 25% 25% 25% 25% 25% 25%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "cookingMat"
+            "projInfo1"
+            "trekIt"
+            "projInfo2"
+            "getMo"
+            "projInfo3"
+        ;
+    }
 }
